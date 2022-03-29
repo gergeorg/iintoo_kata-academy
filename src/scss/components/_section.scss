@@ -1,0 +1,132 @@
+.main-section {
+  &__container {
+    display: flex;
+  }
+
+  &__left {
+    padding: 43px 50px;
+    width: 52.8%;
+    max-height: 100%;
+    background-color: var(--tropaz-color);
+
+    @include notebook {
+
+    }
+  }
+
+  &__right {
+    width: 47.2%;
+    padding: 111px 77px 108px 71px;
+    background-color: var(--white-color);
+  }
+
+  &__logo {
+    &-img {
+      width: 140px;
+      height: 28px;
+    }
+  }
+
+  &__left {
+    @include image-set('../img/bg');
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 31px;
+    color: var(--text-color);
+  }
+
+  &__subtitle {
+    margin-bottom: 56px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.65px;
+    color: var(--slate-gray-color);
+  }
+
+  &__wrapper {
+    margin-bottom: 51px;
+    margin-left: 4px;
+    display: flex;
+  }
+
+
+  &__btn {
+    padding: 12px 52px;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--white-color);
+    background-repeat: no-repeat;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+
+    &-fb {
+      background-color: var(--fb-color);
+      background-image: url(../img/facebook.svg);
+      background-size: 20px;
+      background-position: 10px center;
+    }
+
+    &-in {
+      padding-right: 59px;
+      background-color: var(--in-color);
+      background-image: url(../img/linkedin.svg);
+      background-size: 18px;
+      background-position: 17px center;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: block;
+    // margin-right: 11px;
+    margin-bottom: 44px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--text-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      // left: 140px;
+      left: 27%;
+      width: 20%;
+      // width: 110px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      // right: 140px;
+      right: 27%;
+      width: 20%;
+      // width: 110px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
+  }
+}
+
+
