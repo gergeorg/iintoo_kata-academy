@@ -1,5 +1,6 @@
 .tooltip {
   position: relative;
+
   cursor: help;
 
   &::after {
@@ -21,18 +22,21 @@
 
     @include mobile {
       left: 90%;
-      transform: translateX(-10%);;
+      transform: translateX(-10%);
+      ;
     }
 
     @include small-mobile {
       width: 200px;
       left: 70%;
-      transform: translateX(-30%);;
+      transform: translateX(-30%);
+      ;
     }
 
   }
 
-  &:hover, &:focus{
+  &:hover,
+  &:focus {
     &::after {
       opacity: 1;
       display: block;
@@ -56,7 +60,3 @@
 
   }
 }
-
-
-
-
